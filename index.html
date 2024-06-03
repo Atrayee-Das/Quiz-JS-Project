@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    
+</head>
+<body>
+    
+    <div id="startQuiz" class="bg-light p-5 shadow">
+        <h1 class="text-center">POP Quiz</h1>
+        <hr class="mb-5" />
+        <input
+          type="text"
+          id="playerName"
+          placeholder="Enter your Name"
+          class="form-control w-50 m-auto"
+        />
+        <input
+          type="button"
+          value="Start Quiz"
+          class="btn btn-dark mt-3 m-auto d-block"
+          id="startQuizBtn"
+        />
+      </div>
+  
+  
+      <!-- ============================Quiz Box===================== -->
+      <div id="quizBox" class="bg-light p-5 shadow">
+        <div class="row">
+          <div class="col">
+            <h4 id="changePlayerName">Player</h4>
+          </div>
+          <div class="col">
+            <h4 id="time" class="text-center">00:00</h4>
+          </div>
+          <div class="col">
+            <h4 id="points" class="float-end">Points: 0</h4>
+          </div>
+        </div>
+  
+  
+        <hr />
+  
+  
+        <div class="row">
+          <div class="col">
+            <h2 id="q">Question</h2>
+          </div>
+        </div>
+  
+  
+        <div class="row row-cols-2 mt-4">
+          <div class="col">
+            <input
+              type="button"
+              value="a"
+              id="a"
+              class="opt btn btn-dark w-100 mt-4"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="b"
+              id="b"
+              class="opt btn btn-dark w-100 mt-4"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="c"
+              id="c"
+              class="opt btn btn-dark w-100 mt-4"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="d"
+              id="d"
+              class="opt btn btn-dark w-100 mt-4"
+            />
+          </div>
+        </div>
+  
+  
+        <hr class="mt-5" />
+  
+  
+        <div class="row">
+          <div class="col">
+            <h4 id="questionNo">Question No. 0/0</h4>
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="50-50"
+              id="lifeLine"
+              class="btn btn-dark w-50 d-block m-auto"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="button"
+              value="Next"
+              id="nextQuestion"
+              class="btn btn-outline-dark w-50 float-end"
+            />
+          </div>
+        </div>
+      </div>
+  
+  
+      <!-- ============================Restart Quiz Box===================== -->
+      <div id="restartQuiz" class="bg-light p-5 shadow">
+        <h3 id="finalPoints" class="text-center">Final Points: 0</h3>
+        <input
+          type="button"
+          value="Restart Quiz"
+          id="restartQuizBtn"
+          class="btn btn-dark m-auto d-block mt-3"
+        />
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <script src="jquery.min.js"></script>
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
